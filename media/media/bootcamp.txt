@@ -1,0 +1,90 @@
+Unit tests will save the developers’ time during which of the following phases? -- maintenance of code
+Which step is the most appropriate in this situation? -- justify writing unit tests around the case
+Which attribute is missing from the code that makes it difficult to identify why the first unit test fails? -- clear
+Which of the following is most likely the cause of the issue? -- interaction with external systems
+
+Which of the following issues result from neglecting code review on the project?
+Broken functionality  Poor unit test quality
+
+Which of the following issues caused Vihaan to fail the task?A bus factor of one The team’s unwillingness to learn how all parts of the application work
+
+Assigning knowledge sharing tasks for the next sprint will help the team--work more efficiently in the long term
+
+Maximizing the number of knowledge keepers will allow the team to:
+
+
+reduce project delivery risks
+ 
+
+What are the two major causes of the team’s technical debt?
+Gaps in the initial design
+correct
+Business pressure
+
+Which of the following steps can help the team manage and minimize their technical debt? Reserve extra time in the next couple of sprints for refactoring to reduce code complexity in the system
+ollow best design principles during the initial implementation and refactoring
+
+
+Writing test cases is beneficial for the project because it enables the testing team to do which of the following actions?
+improve the product’s quality earlier in the process
+onboard new testers without much training
+Which of the following practices is most likely to enable test cases to cover functionality effectively? --use test case design techniques
+
+
+Which of the following risks will the QA team experience from neglecting test case management on the project?
+duplication of existing test cases
+correct
+challenges with collecting important statistics
+
+Which of the following parameters are missing from Anand’s test case?a self-explanatory title
+correct
+concise test steps
+preconditio
+
+Which of the following areas should test cases verify to be included into a regression test suite?
+most error-prone functionality
+functionality most visible to users
+recently changed requirements
+
+Which of the following areas should test cases verify to be included into a regression test suite?
+most error-prone functionality
+functionality most visible to users
+recently changed requirements
+ 
+
+Which of the following benefits will the QA team experience from documenting test coverage in their project?
+getting information on all requirements quickly
+correct
+tracing user requirements with test cases
+correct
+covering all functionalities with test cases
+
+Compared to functional tests, which of the following risks do non-functional tests allow product teams to prevent?
+security breach of confidential data
+overly slow load and response time
+
+Unlike functional tests, executing non-functional tests requires the QA team to take which of the following actions?
+predefine customer expectations
+utilize special automation tools
+
+Which of the following non-functional characteristics of the web application are MOST critical to test?usability
+security
+scalability
+
+Which of the following benefits will the team experience from performing non-functional tests after each release to the test environment?
+
+Avoiding problems with delivery of the product
+correct
+Reducing technical debt
+
+Detecting regressions quickly
+
+Which of the following steps will enable the team to meet the needs of the client?
+Interpret the findings
+Create an action plan
+
+correct
+
+Which infrastructure management approach should the team adopt to make infrastructure management easy and effective?Automatic declarative
+
+How does IaC enable a team to control automatically applied changes in infrastructure code?By allowing the team to review the changes before applying them
