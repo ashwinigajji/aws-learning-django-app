@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-v3-ik+tbrd#4nle6p3aau^&q7h&80=svmsgg=h3r26wj5x4jwr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'notes.apps.NotesConfig',
+    'storages',  #for storage to S3 bucket
 ]
 
 MIDDLEWARE = [
@@ -74,14 +75,14 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
+#Database info of RDS AWS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'todoappuser',
+        'NAME': 'databasetodoapp',
         'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'postgres',
+        'HOST': 'database-1.cno5r0skvs5p.ap-south-1.rds.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -130,3 +131,21 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+AWS_ACCESS_KEY_ID = 'AKIA2LIO7VICCJK3QLN6'#security key id of user
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'todoappuser'
+AWS_S3_SIGNATURE_VERSION = 's3v4'
+#AWS_S3_REGION_NAME = ''
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+AWS_S3_VERIFY = True
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+EMAIL_USE_TLS = True  
+EMAIL_HOST = 'email-smtp.ap-south-1.amazonaws.com'  # ses setting smtp user id and password
+EMAIL_HOST_USER = 'AKIA2LIO7VICKAP6LQ7B'  
+EMAIL_HOST_PASSWORD = 'BOsk87RwOZtlBNdZ+WCaRyxHEpFJ1D0AtX/MLUbajLRM'  
+EMAIL_PORT = 587
+
+#EMAIL_BACKEND = 'django_ses.SESBackend'
+#AWS_SES_REGION_ENDPOINT = 'email.ap-south-1.amazonaws.com'
